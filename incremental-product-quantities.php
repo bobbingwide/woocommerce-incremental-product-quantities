@@ -58,8 +58,8 @@ class Incremental_Product_Quantities {
 		add_action( 'init', array( $this, 'get_wc_version' ) );
 		
 		// Control Admin Notices
-		add_action( 'admin_notices', array( $this, 'thumbnail_plugin_notice' ) );
-		add_action( 'admin_init', array( $this, 'thumbnail_plugin_notice_ignore' ) );
+		//add_action( 'admin_notices', array( $this, 'thumbnail_plugin_notice' ) );
+		//add_action( 'admin_init', array( $this, 'thumbnail_plugin_notice_ignore' ) );
 
 	}
 
@@ -276,7 +276,7 @@ class Incremental_Product_Quantities {
 			if ( ! get_user_meta( $user_id, 'wpbo_thumbnail_input_notice' ) ) {
 				
 				echo '<div class="updated">
-			       <p><strong>Notice:</strong> It is highly recommended you install and activate the <a href="http://wordpress.org/plugins/woocommerce-thumbnail-input-quantities/" target="_blank">WooCommerce Thumbnail Input Quantites</a> plugin to display input boxes on products thumbnails. <a href="';
+			       <p><strong>Notice:</strong> It is highly recommended you install and activate the <a href="http://wordpress.org/plugins/woocommerce-thumbnail-input-quantities/" target="_blank">WooCommerce Thumbnail Input Quantities</a> plugin to display input boxes on products thumbnails. <a href="';
 			       
 			       // Echo the current url 
 			       echo site_url() . $_SERVER['REQUEST_URI'];
