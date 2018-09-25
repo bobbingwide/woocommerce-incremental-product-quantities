@@ -1,10 +1,10 @@
 === WooCommerce Advanced Product Quantities  ===
-Contributors: wpbackoffice
+Contributors: wpbackoffice, bobbingwide
 Tags: woocommerce, product quantities, product minimum values, product maximum values, product step values, incremental product quantities, min, max
-Donate Link: http://wpbackoffice.com/plugins/woocommerce-incremental-product-quantities/
-Requires at least: 3.5
-Tested up to: 4.1
-Stable tag: 2.1.9
+Donate Link: https:///
+Requires at least: 4.9
+Tested up to: 4.9.8
+Stable tag: 2.2.0
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,8 @@ Easily require your customers to buy a minimum / maximum / incremental amount of
 
 == Description ==
 
-With WooCommerce Advanced Product Quantities you can easily create rules that restrict the amount of products a user can buy at once. Set Minimum, Maximum and Step values for any product type and must be valid before a customer can proceed to checkout.
+With WooCommerce Advanced Product Quantities you can easily create rules that restrict the amount of products a user can buy at once. 
+Set Minimum, Maximum and Step values for any product type and must be valid before a customer can proceed to checkout.
 
 New Features
 
@@ -39,7 +40,7 @@ Features:
 * Now fully supports ALL PRODUCT TYPES, simple, variable, grouped and affiliate
 * Create Site Wide rules that apply to every product unless overwritten on a per-product basis
 * Create rules by Product Tags (opposed to just categories)
-* Woocommerce +2.0 compatible 
+* WooCommerce 3.0 compatible 
 
 [Plugin's Official Documentation and Support Page](http://www.wpbackoffice.com/plugins/woocommerce-incremental-product-quantities)
 
@@ -48,20 +49,23 @@ Features:
 Automatic WordPress Installation
 
 1. Log-in to your WordPress Site
-2. Under the plugin sidebar tab, click ‘Add New’
-3. Search for ‘WooCommerce Advanced Product Quantities
+2. Under the plugin sidebar tab, click Add New
+3. Search for WooCommerce Advanced Product Quantities
 4. Install and Activate the Plugin
-5. Set Rules for categories by clicking the new ‘Quantity Rules’ sidebar option or assign per-product rules by using the new metabox on your product page.
+5. Set Rules for categories by clicking the new Quantity Rules sidebar option or assign per-product rules by using the new metabox on your product page.
 
 Manual Installation
 
 1. Download the latest version of the plugin from WooCommerce Advanced Product Quantities WordPress page.
 3. Uncompress the file
-4. Upload the uncompressed directory to ‘/wp-content/plugins/’ via FTP
-5. Active the plugin from your WordPress backend ‘Plugins -> Installed Plugins’
+4. Upload the uncompressed directory to /wp-content/plugins/ via FTP
+5. Active the plugin from your WordPress backend Plugins -> Installed Plugins
 6. Set Rules for categories by clicking the new ‘Quantity Rules’ sidebar option or assign per-product rules by using the new metabox on your product page.
 
 == Upgrade Notice == 
+
+= 2.2.0 =
+Upgrade for WooCommerce 3 support.
 
 = 2.1.9 = 
 * Fixing munged defaults for the sitewide rules that could cause it to fail if all fields weren't populated.
@@ -101,6 +105,12 @@ Added user role support for Quantity Rules, improved performance / user interfac
 This major upgrade adds the following features - Now supports all product types, allows you to create site wide rules, and rules by product tags. It is recommended that you back up and test your site with 2.0 before going live.
 
 == Changelog ==
+= 2.2.0 =
+* Changed: Avoid Notices by fixing logic deprecated by WooCommerce 3.0 [github wpbackoffice woocommerce-incremental-product-quantities issues 39]
+* Changed: Disabled recommendation to install WooCommerce Thumbnail Input Quantities [github wpbackoffice woocommerce-incremental-product-quantities issues 41]
+* Tested: With WooCommerce 3.4.5. Not tested with WooCommerce 2.6
+* Added: Banner and icon assets.
+
 
 = 2.1.6 = 
 * Hides message when no quantity rule is being applied.
